@@ -1,28 +1,20 @@
-class Person
-  attr_accessor :name, :age
-
-  def initialize(name, age)
-    @name = name
-    @age = age
-  end
-
-  def nickname
-    # YOUR IMPLEMENTATION HERE
-    'nickname'
-  end
-
-  def birth_year
-    # YOUR IMPLEMENTATION HERE
-    1990
-  end
-
-  def introduction
-    # YOUR IMPLEMENTATION HERE
-    'introduce'
-  end
-
-  def fib_number
-    # YOUR IMPLMENTATION HERE
-    0
-  end
-end
++class Person
+ +  def initialize(name,  age)
+ +    @pname = name
+ +    @page = age
+ +    @pnick = name[0..3]
+ +  end
+ +
+ +  def introduce
+ +    "#{@pname} #{@page}"
+ +  end
+ +
+ +  def age
+ +    2016 - @page.to_i
+ +  end
+ +
+ +  def nickname
+ +    "#{@pnick}"
+ +  end
+ +
+ +end
